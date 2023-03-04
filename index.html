@@ -8,27 +8,60 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <script src="https://kit.fontawesome.com/43c270ac46.js" crossorigin="anonymous"></script>
+
     <title>Nate Franz</title>
 
     <style>
       .darkmode{
-        background-color: #121212;
+        background-color: #0c0e1b;
         color:white;
-        
+
       }
       .lightmode{
+        background-color: #d0d0d0
+      }
+
+      .card{
+
+      }
+
+      .card:hover{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom: black;
+        border-radius: 5px;
+
+        box-shadow: 0 4px 8px 0 #7289da, 0 6px 20px 0 #7289da;
+      }
+      img {
+        border-radius:50%;
+      }
+      .btn{
+        margin-left:20px; 
+        margin-right:20px; 
+        margin-top:20px;
+        max-width: 180px;
+      }
+      .display-3{
+        margin-top:160px; 
+        margin-bottom:80px;
+      }
+      .row{
         
       }
     </style>
   </head>
-  <body id="body" class="darkmode" style="color:white">
-    <!--picture and desc-->
-    <div class="container-fluid align-middle" style="text-align:center;">
+  <body id="body" class="darkmode">
+
+    <div class="container-fluid" >
+
+
 
       <!-- contact me modal -->
       <div class="modal" id="contactMeModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content" style="background-color:#434343; border-color:white; border-radius:5px">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="background-color:#242b53; border-color:white; border-radius:5px">
             <div class="modal-header">
               <h5 class="modal-title">Contact Me</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -40,17 +73,17 @@
 
                 <div class="form-group">
                   <label for="firstName">First Name:</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="John">
+                  <input type="text" class="form-control" id="firstName">
                 </div>
 
                 <div class="form-group">
                   <label for="lastName">Last Name:</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                  <input type="text" class="form-control" id="lastName">
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">Email address</label>
-                  <input type="email" class="form-control" id="emailFrm" placeholder="name@example.com">
+                  <label for="exampleFormControlInput1">Email address:</label>
+                  <input type="email" class="form-control" id="emailFrm">
                 </div>
 
                 <div class="form-group">
@@ -58,72 +91,82 @@
                   <textarea class="form-control" id="message" rows="3"></textarea>
                 </div>
 
-
-
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
               <button type="button" class="btn btn-light" data-dismiss="modal">Submit</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-2" style="text-align:center;">
-          <img class="img-fluid rounded-circle" style="margin-top:50px" src="https://images.squarespace-cdn.com/content/v1/5d6fd6d0a71158000138ceb3/c76c2239-bf28-48e8-ad86-c1384c3e1cd4/DSCF1168.jpg?format=300w">
-        </div>
-        <div class="col-md-4" style="margin-top:80px; text-align:center; vertical-align: middle;">
-          <h1 class="display-1">Hi, I'm Nate Franz</h1>
-          <p style="font-size:large; margin-bottom:30px;">Management Information Systems student at The University of Akron <br> Graduating May 2023</p>
-          <a href="Franz, Nathaniel Resume.pdf" class="btn btn-outline-light" role="button" target="_blank" rel="noopener noreferrer" style="margin-left:20px; margin-right:20px; margin-top:20px; width:180px;">Resume</a>
-          <a href="https://www.linkedin.com/in/nathaniel-franz-2348a3192/" class="btn btn-outline-light" role="button" target="_blank" rel="noopener noreferrer" style="margin-left:20px; margin-right:20px; margin-top:20px; width:180px;">LinkedIn</a>
-          <a href="#" class="btn btn-outline-light" role="button" data-toggle="modal" data-target="#contactMeModal" target="_blank" rel="noopener noreferrer" style="margin-left:20px; margin-right:20px; margin-top:20px; width:180px;">Contact Me</a>
-        </div>
-      </div>
 
-      <br><br>
 
-      <!--about me
-      <h1 class="display-3" style="margin-top:30px; margin-bottom:50px;">About Me</h1>
-      <div class="row justify-content-center" style="margin-top:30px">
-        <div class="col-md-6">
-          <div class="card" style="border-color:#000;">
-            <div class="card-body" style="background-color:#434343;">
-              <h4 style="text-align:left"></h4>
-              <P class="card-text" style="text-align:left">
-                Fuck
-              </P>
+      <!--picture and desc-->
+
+        <div class="row text-center" style="background-color:#7289da;">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <img class="img text-lg-right" style="margin-top:50px; margin-bottom:-75px; box-shadow: 0 4px 8px 0 #0c0e1b, 0 6px 20px 0 #0c0e1b;" src="https://images.squarespace-cdn.com/content/v1/5d6fd6d0a71158000138ceb3/c76c2239-bf28-48e8-ad86-c1384c3e1cd4/DSCF1168.jpg?format=300w">
+          </div>
+          <div class="col-sm-10 col-md-10 col-lg-10 col-xl-8">
+            <div class="card" style="background-color: transparent; border: none; box-shadow:none;">
+              <div class="card-body" style="background-color: transparent; border: none;">
+                <h1 class="display-1" style="color:#0c0e1b; margin-top: 60px;">Hi, I'm Nate Franz</h1>
+                <a href="Franz, Nathaniel Resume.pdf" class="btn btn-outline-light" role="button" target="_blank" rel="noopener noreferrer" style="margin-left:20px; margin-right:20px; margin-bottom: 10px; width:180px;">Resume</a>
+                <a href="https://www.linkedin.com/in/nathaniel-franz-2348a3192/" class="btn btn-outline-light" role="button" target="_blank" rel="noopener noreferrer" style="margin-left:20px; margin-right:20px; margin-bottom: 10px; width:180px;">LinkedIn</a>
+                <a href="#" class="btn btn-outline-light" role="button" data-toggle="modal" data-target="#contactMeModal" target="_blank" rel="noopener noreferrer" style="margin-left:20px; margin-right:20px; margin-bottom: 10px; width:180px;">Contact Me</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>-->
+
+
+    <!-- education -->
+
+    <div class="row justify-content-center">
+      <h1 class="display-3" style="margin-top:80px; margin-bottom:50px; ">Education</h1>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-md-10 col-lg-10 col-xl-8">
+        <div class="card" style="border-color:#7289da; border-radius: 5px;">
+          <div id="card" class="card-body" style="background-color:#242b53; text-align:left; border-radius: 5px;">
+            <h4>Management Information Systems Major - The University of Akron </h4><i style="color:#c4c8dc; text-align: top;"> Expected Graduation: May 2023</i><br>
+            <ul class="card-text" style="text-align:left">
+            </ul>
+            <p><i>Relevant Classes:</i> Computer Science I, Systems Integration, Data Networks & Security, Applications Development for Business Processes, Systems Analysis & Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
       <!--work exp-->
+
       <div class="row justify-content-center">
-        <h1 class="display-3" style="margin-top:60px; margin-bottom:80px;">Work Experience</h1>
+        <h1 class="display-3 text-center" style="margin-top:160px; margin-bottom:80px;">Work Experience</h1>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="card" style="border-color:#000;">
-            <div class="card-body" style="background-color:#434343; color:white; text-align:left;">
-              <h4>Developer - The J.M. Smucker Co </h4><i style="color:#a1a1a1; text-align: top;"> Sep 2022 - Present</i><br>
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-8">
+          <div class="card" style="border-color:#7289da; border-radius: 5px;">
+            <div class="card-body" style="background-color:#242b53; color:white; text-align:left; border-radius: 5px;">
+              <h4>Developer - The J.M. Smucker Co </h4><i style="color:#c4c8dc; text-align: top;"> Sep 2022 - Present</i><br>
               <ul class="card-text" style="text-align:left">
               </ul>
-              <p><i>Technologies/Skills:</i> AWS, GitHub Actions, SQL, QA Testing, Process Automation</p>
+              <p><i>Technologies/Skills:</i> AWS, GitHub Actions, SQL, QA Testing, Process Automation, Agile Project Management & Documentation</p>
             </div>
           </div>
         </div>
       </div>
 
+
       <div class="row justify-content-center" style="margin-top:30px">
-        <div class="col-md-6">
-          <div class="card" style="border-color:#000;">
-            <div class="card-body" style="background-color:#434343; color:white; text-align:left;">
-              <h4>IT Analyst Intern - The J.M. Smucker Co </h4><i style="color:#a1a1a1; text-align: top;">May 2022 - Aug 2022</i><br><br>
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-8">
+          <div class="card" style="border-color:#7289da; border-radius: 5px;">
+            <div class="card-body" style="background-color:#242b53; color:white; text-align:left; border-radius: 5px;">
+              <h4>IT Analyst Intern - The J.M. Smucker Co </h4><i style="color:#c4c8dc; text-align: top;">May 2022 - Aug 2022</i><br><br>
               <ul class="card-text" style="text-align:left">
                 <li>Assist with the construction of a POC project proving the feasibility of a Microsoft Azure cloud service solution utilizing over 40,000 sample data records</li>
                 <li>Assist in the exploration of architecting and implementing an automated testing serverless function utilizing both on premises and AWS cloud hosted data</li>
@@ -136,10 +179,10 @@
       </div>
 
       <div class="row justify-content-center" style="margin-top:30px">
-        <div class="col-md-6">
-          <div class="card" style="border-color:#000;">
-            <div class="card-body" style="background-color:#434343; color:white; text-align:left;">
-              <h4>BMW Product Genius - BMW of Akron </h4><i style="color:#a1a1a1; text-align: top;"> Nov 2020 - Mar 2022</i><br><br>
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-8">
+          <div class="card" style="border-color:#7289da; border-radius: 5px;">
+            <div class="card-body" style="background-color:#242b53; color:white; text-align:left; border-radius: 5px;">
+              <h4>BMW Product Genius - BMW of Akron </h4><i style="color:#c4c8dc; text-align: top;"> Nov 2020 - Mar 2022</i><br><br>
               <ul class="card-text" style="text-align:left">
                 <li>Maintain relevant product knowledge on all past and present BMW vehicles</li>
                 <li>Effectively communicate product knowledge to an average of 15 buyers per month to ensure a memorable customer experience</li>
@@ -151,62 +194,107 @@
         </div>
       </div>
 
+
+
+
+
       <!--extracurriculars-->
-        <h1 class="display-3" style="margin-top:160px; margin-bottom:80px;">Extracurricular Involvement</h1>
 
-        <div class="row justify-content-center" style="margin-top:30px; margin-bottom:30px">
-          <div class="col-md-6">
-            <div class="card" style="border-color:#000;">
-              <div class="card-body" style="background-color:#434343; color:white; text-align:left;">
-                <h4>Administrative Support - Zips Racing Combustion FSAE </h4><i style="color:#a1a1a1; text-align: top;"> Jun 2022 - Present</i><br><br>
-                <p><i>Technologies/Skills:</i> Microsoft Power Automate, MS Excel, MS Forms, SolidWorks, Ultimaker Cura, Trello</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center" style="margin-top:30px; margin-bottom:30px">
-          <div class="col-md-6">
-            <div class="card" style="border-color:#000;">
-              <div class="card-body" style="background-color:#434343; color:white; text-align:left;">
-                <h4>Administrative Lead - Zips Racing Combustion FSAE </h4><i style="color:#a1a1a1; text-align: top;"> May 2021 - Jun 2022</i><br><br>
-                <ul class="card-text" style="text-align:left">
-                  <li>Keep detailed records of purchase requests, purchase approvals and credit card transactions as well as providing a detailed team/budget presentation to the University</li>
-                  <li>Compile cost analysis for competitions and well as real world business case analysis</li>
-                  <li>Oversee and assign projects to the other people in my department of the team</li>
-                </ul><br>
-                <p><i>Technologies/Skills:</i> Microsoft Power Automate, MS Excel, MS Forms, SolidWorks, Ultimaker Cura, Trello</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      <h1 class="display-3" style="margin-top:160px; margin-bottom:50px;">Projects</h1>
+      <div class="row justify-content-center">
+        <h1 class="display-3 text-center" style="margin-top:160px; margin-bottom:80px;">Extracurricular Involvement</h1>
+      </div>
 
       <div class="row justify-content-center" style="margin-top:30px; margin-bottom:30px">
-        <div class="col-md-6">
-          <div class="card" style="border-color:#000;">
-            <div class="card-body" style="background-color:#434343; color:white; text-align:left;">
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-8">
+          <div class="card" style="border-color:#7289da; border-radius: 5px;">
+            <div class="card-body" style="background-color:#242b53; color:white; text-align:left; border-radius: 5px;">
+              <h4>Administrative Support - Zips Racing Combustion FSAE </h4><i style="color:#c4c8dc; text-align: top;"> Jun 2022 - Present</i><br><br>
+              <p><i>Technologies/Skills:</i> Microsoft Power Automate, MS Excel, MS Forms, SolidWorks, Ultimaker Cura, Trello</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center" style="margin-top:30px; margin-bottom:30px">
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-8">
+          <div class="card" style="border-color:#7289da; border-radius: 5px;">
+            <div class="card-body" style="background-color:#242b53; color:white; text-align:left; border-radius: 5px;">
+              <h4>Administrative Lead - Zips Racing Combustion FSAE </h4><i style="color:#c4c8dc; text-align: top;"> May 2021 - Jun 2022</i><br><br>
+              <ul class="card-text" style="text-align:left">
+                <li>Keep detailed records of purchase requests, purchase approvals and credit card transactions as well as providing a detailed team/budget presentation to the University</li>
+                <li>Compile cost analysis for competitions and well as real world business case analysis</li>
+                <li>Oversee and assign projects to the other people in my department of the team</li>
+              </ul><br>
+              <p><i>Technologies/Skills:</i> Microsoft Power Automate, MS Excel, MS Forms, SolidWorks, Ultimaker Cura, Trello</p>
+              <!--<button type="button" class="btn btn-outline-light">Learn More</button>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row justify-content-center">
+        <h1 class="display-3" style="margin-top:160px; margin-bottom:50px;">Projects</h1>
+      </div>
+
+      <div class="row justify-content-center" style="margin-top:30px; margin-bottom:30px">
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-8">
+          <div class="card" style="border-color:#7289da; border-radius: 5px;">
+
+            <div class="card-body align-items-start" style="background-color:#242b53; color:white; text-align:left; border-radius: 5px;">
               <h4>Reaction Time Game</h4><br>
+
               <ul class="card-text" style="text-align:left">
                 <li>Press green "Play" to start</li>
                 <li>Click the green rectangle as fast as you can after it appears</li>
                 <li>Don't click too early!</li>
               </ul>
-              <div class="row justify-content-center" style="margin-top:30px; margin-bottom:50px;">
-                <div class="col-md-10">
 
-                  <button id="screen" type="button" class="btn-block" onclick="endTime()" style="height:400px; max-height:100%; background-color: white;"></button>
-                  <button id="play" type="button" class="btn btn-success btn-lg btn-block" onclick="appearAfterDelay()">Play</button>
-                  <button id="reset" type="button" class="btn btn-danger btn-lg btn-block" onclick="reset()">Reset</button>
+              <div class="row justify-content-center" style="margin-top:30px; margin-bottom:50px;">
+                <div class="col-10">
+
+                <button id="screen" type="button" class="btn-block" onclick="endTime()" style="height:400px; max-height:100%; background-color: #7289da; text-align:center; color:white;"><h4>CLICK<br>PLAY</h4></button>
+                <button id="play" type="button" class="btn btn-success btn-lg btn-block" style="max-width: 100%; margin-left: 0px;">Play</button>
+                <button id="reset" type="button" class="btn btn-danger btn-lg btn-block" style="max-width: 100%; margin-left: 0px;" onclick="reset()">Reset</button>
+
+                <!-- reaction time leaderboard -->
+                  <h4 style="text-align:center; margin-top: 50px;">Leaderboard</h4>
+
+                  <table class="table" style="margin-bottom: -20px;">
+                    <thead>
+                      <th scope="col"></th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Time</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td id="firstname">1</td>
+                        <td id="firsttime">1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td id="secondname">1</td>
+                        <td id="secondtime">1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td id="thirdname">1</td>
+                        <td id="thirdtime">1</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      
+
+
     </div>
 
 
@@ -219,29 +307,55 @@
         element.classList.add("dark");
       }
 
-      function appearAfterDelay() {
-        setTimeout(timekeep, 2000);
+
+      var playclick; var screenclick; var reactiontime;
+
+      var firstplacetime = document.getElementById("firsttime").innerHTML.toString();
+      var secondplacetime = document.getElementById("secondtime").innerHTML.toString();
+      var thirdplacetime = document.getElementById("thirdtime").innerHTML.toString();
+      var playername = 'leaderboard doesnt work yet lol';
+
+
+      document.getElementById("play").onclick=function(){
+        playclick = Date.now();
+        document.getElementById("screen").innerHTML = " ";
+        setTimeout(greenscreen, 2000);
       }
 
-      function startTime(){
-        new Date().getTime()
+
+      document.getElementById("screen").onclick=function(){
+        screenclick = Date.now();
+
+        reactiontime = ( screenclick - (playclick + 2000) ) / 1000;
+
+        if(reactiontime >= 0){
+          document.getElementById("screen").innerHTML = reactiontime + " seconds";
+          
+          if( reactiontime < firstplacetime ){
+            document.getElementById("firsttime").innerText = reactiontime + " s";
+            document.getElementById("firstname").innerText = playername;
+
+          }
+
+        
+        }
+        else{
+          document.getElementById("screen").style.backgroundColor = 'red';
+          document.getElementById("screen").innerHTML = "<h4>TOO<br>EARLY</h4>";
+        }
+
       }
 
-      function endTime(){
-        new Date().getTime();
-      }
 
-      function timekeep(){
-        var start = setTimeout(startTime, 2000);
-        var end = setTimeout(endTime, 4000);
-        var timeTaken = (end - start) / 1000;
+      function greenscreen(){
         document.getElementById("screen").style.backgroundColor = 'green';
-        document.getElementById("screen").innerHTML = timeTaken + "s";
+        
       }
 
       function reset(){
-        document.getElementById("screen").style.backgroundColor = 'white';
+        document.getElementById("screen").style.backgroundColor = '#7289da';
         document.getElementById("screen").style.color = 'white';
+        document.getElementById("screen").innerHTML = "<h4>CLICK<br>PLAY</h4>";
       }
     </script>
 
