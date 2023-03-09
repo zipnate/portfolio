@@ -61,7 +61,7 @@
       <!-- contact me modal -->
       <div class="modal" id="contactMeModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content" style="background-color:#242b53; border-color:white; border-radius:5px">
+          <div class="modal-content" style="background-color:#242b53; border-color:#7289da; border-radius:5px">
             <div class="modal-header">
               <h5 class="modal-title">Contact Me</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -103,10 +103,12 @@
 
 
 
+
+
       <!--picture and desc-->
 
         <div class="row text-center" style="background-color:#7289da;">
-          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+          <div class="col-sm-1 col-md-1 col-lg-2 col-xl-2">
             <img class="img text-lg-right" style="margin-top:50px; margin-bottom:-75px; box-shadow: 0 4px 8px 0 #0c0e1b, 0 6px 20px 0 #0c0e1b;" src="https://images.squarespace-cdn.com/content/v1/5d6fd6d0a71158000138ceb3/c76c2239-bf28-48e8-ad86-c1384c3e1cd4/DSCF1168.jpg?format=300w">
           </div>
           <div class="col-sm-10 col-md-10 col-lg-10 col-xl-8">
@@ -135,7 +137,7 @@
             <h4>Management Information Systems Major - The University of Akron </h4><i style="color:#c4c8dc; text-align: top;"> Expected Graduation: May 2023</i><br>
             <ul class="card-text" style="text-align:left">
             </ul>
-            <p><i>Relevant Classes:</i> Computer Science I, Systems Integration, Data Networks & Security, Applications Development for Business Processes, Systems Analysis & Design</p>
+            <p ><i>Relevant Classes:</i> Computer Science I, Systems Integration, Data Networks & Security, Information Systems Security, Application Development, Systems Analysis & Design</p>
           </div>
         </div>
       </div>
@@ -155,7 +157,7 @@
               <h4>Developer - The J.M. Smucker Co </h4><i style="color:#c4c8dc; text-align: top;"> Sep 2022 - Present</i><br>
               <ul class="card-text" style="text-align:left">
               </ul>
-              <p><i>Technologies/Skills:</i> AWS, GitHub Actions, SQL, QA Testing, Process Automation, Agile Project Management & Documentation</p>
+              <p><i>Technologies/Skills:</i> AWS, GitHub Actions, SQL, QA Testing, Process Automation, Agile Project Management</p>
             </div>
           </div>
         </div>
@@ -258,7 +260,9 @@
                 <button id="play" type="button" class="btn btn-success btn-lg btn-block" style="max-width: 100%; margin-left: 0px;">Play</button>
                 <button id="reset" type="button" class="btn btn-danger btn-lg btn-block" style="max-width: 100%; margin-left: 0px;" onclick="reset()">Reset</button>
 
-                <!-- reaction time leaderboard -->
+
+                
+                <!-- reaction time leaderboard 
                   <h4 style="text-align:center; margin-top: 50px;">Leaderboard</h4>
 
                   <table class="table" style="margin-bottom: -20px;">
@@ -284,7 +288,7 @@
                         <td id="thirdtime">1</td>
                       </tr>
                     </tbody>
-                  </table>
+                  </table>  -->
                 </div>
 
               </div>
@@ -310,10 +314,13 @@
 
       var playclick; var screenclick; var reactiontime;
 
-      var firstplacetime = document.getElementById("firsttime").innerHTML.toString();
-      var secondplacetime = document.getElementById("secondtime").innerHTML.toString();
-      var thirdplacetime = document.getElementById("thirdtime").innerHTML.toString();
-      var playername = 'leaderboard doesnt work yet lol';
+
+      // leaderboard vars and init
+
+      //var firstplacetime = document.getElementById("firsttime").innerHTML.toString();
+      //var secondplacetime = document.getElementById("secondtime").innerHTML.toString();
+      //var thirdplacetime = document.getElementById("thirdtime").innerHTML.toString();
+      //var playername = 'leaderboard doesnt work yet lol';
 
 
       document.getElementById("play").onclick=function(){
